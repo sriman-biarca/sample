@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} hellow-world.jar
+ADD target/hellow-world-0.0.1.jar hellow-world.jar
+RUN sh -c 'touch /hellow-world.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/hellow-world.jar"]

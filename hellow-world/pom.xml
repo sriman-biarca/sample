@@ -6,7 +6,7 @@
 
 	<groupId>com.hello.world</groupId>
 	<artifactId>hellow-world</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>hellow-world</name>
